@@ -112,6 +112,28 @@ body {
   font-weight: 800;
 }
 
+.welcome-message {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  padding: 0 50px;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.welcome-message img {
+  width: clamp(44px, 15%, 64px);
+}
+
+.welcome-message p:first-child {
+  font-size: 0.9rem;
+}
+
+.welcome-message p:first-child+p {
+  font-size: 1.5rem;
+}
+
 .main-content {
   grid-row: 2 / 4;
   grid-column: 2 / 7;
