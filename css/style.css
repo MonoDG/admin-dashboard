@@ -3,6 +3,9 @@
 :root {
   --off-white: #FAF9F6;
   --steel-blue: #4682B4;
+  --light-gray: #D3D3D3;
+  --powder-blue: #B6D0E2;
+  --bone-white: #F9F6EE;
 }
 
 * {
@@ -71,11 +74,33 @@ body {
 .header {
   grid-row: 1 / 2;
   grid-column: 2 / 7;
-  background-color: burlywood;
+  background-color: var(--bone-white);
   display: grid;
   grid-template-columns: 4fr 1fr;
   grid-template-rows: 1fr 1fr;
   align-items: center;
+}
+
+.search {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  padding: 0 50px;
+}
+
+.search svg[data-icon="mdi:magnify"] {
+  font-size: 1.4rem;
+}
+
+.search input[type="search"] {
+  max-width: 70ch;
+  flex: 1;
+  font-size: 1.2rem;
+  padding: 5px;
+  border-radius: 15px;
+  background-color: var(--powder-blue);
+  border: none;
 }
 
 .main-content {
