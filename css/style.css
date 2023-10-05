@@ -76,9 +76,13 @@ body {
   grid-column: 2 / 7;
   background-color: var(--bone-white);
   display: grid;
-  grid-template-columns: 4fr 1fr;
+  grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 1fr;
   align-items: center;
+}
+
+.header svg {
+  font-size: 1.4rem;
 }
 
 .search {
@@ -87,10 +91,6 @@ body {
   align-items: center;
   gap: 10px;
   padding: 0 50px;
-}
-
-.search svg[data-icon="mdi:magnify"] {
-  font-size: 1.4rem;
 }
 
 .search input[type="search"] {
@@ -103,8 +103,20 @@ body {
   border: none;
 }
 
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  font-weight: 800;
+}
+
 .main-content {
   grid-row: 2 / 4;
   grid-column: 2 / 7;
   background-color: chartreuse;
+}
+
+.avatar-image {
+  width: clamp(24px, 15%, 44px);
 }
